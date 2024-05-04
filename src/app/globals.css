@@ -5,11 +5,16 @@
 :root {
   --foreground-rgb: 0, 0, 0;
   --accent-rgb: 0, 98, 152;
-  --navbar-h: 3rem;
+  --border-rgb: 146, 207, 242;
+  --navbar-h: 4rem;
+
+  --transition-duration-custom: 350ms;
+  --ease-in-out-custom: cubic-bezier(0.76, 0, 0.24, 1);
 }
 
 body {
   color: rgb(var(--foreground-rgb));
+  /* background-color: rgba(240, 240, 250, 255); */
 }
 
 @layer utilities {

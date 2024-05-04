@@ -16,9 +16,18 @@ const config: Config = {
 			height: {
 				navbar: "var(--navbar-h)",
 			},
-      colors:{
-        accent: "rgb(var(--accent-rgb))"
-      }
+			colors: {
+				accent: "rgba(var(--accent-rgb), 255)",
+				border: "rgba(var(--border-rgb), 255)",
+			},
+			transitionDuration: {
+				custom: "var(--transition-duration-custom)",
+			},
+			transitionTimingFunction: {
+				"in-out-custom": "var(--ease-in-out-custom)",
+				"in-out-cubic": "cubic-bezier(0.65, 0, 0.35, 1)",
+				"in-out-quart": "cubic-bezier(0.76, 0, 0.24, 1)",
+			},
 		},
 	},
 	plugins: [],

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { Navbar } from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,11 +17,8 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="es">
-			<body className={inter.className}>
-				<nav className="flex items-center text-white justify-between h-navbar bg-accent">
-					<div>Fondos Europeos</div>
-					<div>Fondos Europeos</div>
-				</nav>
+			<body className={(inter.className, "overscroll-none")}>
+				<Navbar />
 				{children}
 			</body>
 		</html>
