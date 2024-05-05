@@ -18,6 +18,7 @@ const config: Config = {
 			},
 			colors: {
 				accent: "rgba(var(--accent-rgb), 255)",
+				"bg-custom": "rgba(var(--bg-custom), 255)",
 				border: "rgba(var(--border-rgb), 255)",
 			},
 			transitionDuration: {

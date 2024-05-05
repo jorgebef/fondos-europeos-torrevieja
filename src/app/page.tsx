@@ -2,11 +2,17 @@ import { Card } from "@/components/Card";
 import presidencia_GVA from "@/../public/presidencia-GVA.jpeg";
 import { Container } from "@/components/Container";
 import { Hero } from "@/components/Hero";
+import { InfoSection } from "@/components/FAQ";
+import { CalculadoraRentabilidad } from "@/components/CalculadoraRentabilidad";
 
 export default function Home() {
 	return (
 		<main className="flex flex-col items-center">
 			<Hero />
+
+			<CalculadoraRentabilidad />
+
+			<InfoSection />
 
 			<Container>
 				<h2 className="text-2xl flex gap-2 items-center font-bold text-accent pt-12">
