@@ -8,7 +8,7 @@ import { CalculadoraRentabilidad } from "@/components/CalculadoraRentabilidad";
 
 export default function Home() {
 	return (
-		<main className="flex pt-navbar flex-col items-center">
+		<main className="flex pt-navbar flex-col items-center w-screen overflow-hidden">
 			<Hero />
 
 			<CalculadoraRentabilidad />
