@@ -24,7 +24,7 @@ export const Card = ({
 				className="flex flex-col lg:flex-row lg:h-[30svh] shadow drop-shadow-lg overflow-hidden bg-white group"
 				{...props}
 			>
-				<Image className="size-full object-cover" {...imgProps} />
+				<Image className="size-full aspect-video object-cover" {...imgProps} />
 				<div className="flex py-3 transition-all ease-in-out-custom duration-custom border border-transparent group-hover:border-accent px-4 lg:py-4 lg:px-8 flex-col gap-4 size-full max-w-[60ch]">
 					<h3 className="font-semibold text-accent text-lg">{heading}</h3>
 					<span className="leading-[0.8] italic font-light text-accent">

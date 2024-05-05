@@ -1,6 +1,6 @@
 export const Navbar = () => {
 	return (
-		<nav className="flex px-4 py-4 lg:px-10 sticky top-0 items-center text-white justify-between min-h-navbar bg-accent">
+		<nav className="flex px-4 lg:px-10 fixed w-full z-10 top-0 items-center text-white justify-between h-navbar bg-accent">
 			<svg
 				className="fill-white"
 				xmlns="http://www.w3.org/2000/svg"

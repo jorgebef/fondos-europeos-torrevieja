@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { Container } from "./Container";
 import CurrencyInput from "react-currency-input-field";
 import { cn } from "@/lib/util";
@@ -63,16 +63,16 @@ export const CalculadoraRentabilidad = () => {
 				<div className="flex flex-col my-4 border-white rounded-md border px-4 w-fit self-center py-2 justify-center gap-2 lg:items-center items-start">
 					{result ? (
 						<>
-							<span className="pr-4 font-medium text-white text-2xl">
-								Plazo recuperación: {result} meses
+							<span className="pr-4 text-white font-medium text-2xl">
+								Plazo recuperación:
 							</span>
 							<span
 								className={cn(
-									"pr-4 self-center font-medium text-2xl",
-									result <= 24 ? "text-green-300" : "text-red-300",
+									"pr-4 font-medium text-2xl",
+									result <= 24 ? "text-green-300" : "text-orange-300",
 								)}
 							>
-								{result <= 24 ? "Sí" : "No"} es rentable
+								{result} meses
 							</span>
 						</>
 					) : (
